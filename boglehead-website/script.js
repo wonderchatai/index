@@ -28,7 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
         title: {
             text: '费用率对投资回报的影响 (30年)',
             subtext: '初始投资 $10,000, 年回报率 7%',
-            left: 'center'
+            left: 'center',
+            textStyle: {
+                fontSize: 16
+            }
         },
         tooltip: {
             trigger: 'axis',
@@ -43,6 +46,12 @@ document.addEventListener('DOMContentLoaded', function () {
         legend: {
             data: ['低费用基金 (0.03%)', '高费用基金 (1%)'],
             top: 'bottom'
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '15%',
+            containLabel: true
         },
         xAxis: {
             type: 'category',
@@ -81,4 +90,8 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     option && myChart.setOption(option);
+
+    window.addEventListener('resize', function() {
+        myChart.resize();
+    });
 });
