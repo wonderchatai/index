@@ -71,6 +71,42 @@ ul {
     margin-top: 2rem;
 }
 
+.calculator-container {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.slider-group {
+    margin-bottom: 1.5rem;
+}
+
+.slider-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.slider-group input[type="range"] {
+    width: 100%;
+}
+
+.results {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ddd;
+}
+
+.results h3 {
+    margin-top: 0;
+    color: #0055a5;
+}
+
+.results p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
 footer {
     text-align: center;
     padding: 1rem 0;
